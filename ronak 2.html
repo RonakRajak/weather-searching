@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="loupe.png" alt="Search"></button>
+        </div>
+
+        <div class="weather">
+            <img src="icons8-rain-cloud-48.png" class="weather-icon" alt="Weather Icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="Humidity Icon">
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="col">
+                    <img src="wind.png" alt="Wind Icon">
+                    <p class="wind">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    const apikey = "ea376c47b5f0d23fffe8c0dbae743c5f";
+    const apiurl = "https://api.openweathermap.org/data/2.5/weather units=metric&q=jabalpur";
+    async function checkweather() {
+
+        const response = await fetch( apiurl=${apikey})
+        
+    }
+
+</script>
+</body>
+</html>
